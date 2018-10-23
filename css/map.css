@@ -1,0 +1,245 @@
+.board {
+	
+}
+
+.square, .onSquare {
+	width: 20%;
+	height: 0;
+	padding-bottom: 20%;
+	float:left;
+	background-size: cover;
+	position: relative;
+}
+
+.onBoard {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+}
+
+.top-onBoard {
+	width: 100%;
+	background-color: black;
+}
+
+.left-onBoard {
+	width: 20%;
+	float: left;
+	background-color: black;
+}
+
+.right-onBoard {
+	width: 20%;
+	float: right;
+	background-color: black;
+}
+
+.bottom-onBoard {
+	width: 100%;
+	float: left;
+	background-color: black;
+	overflow: auto;
+}
+
+.hero {
+	width: 80%;
+	padding-bottom: 80%;
+	margin: 10%;
+	background-size: cover;
+	background-image: url("../img/soldado.png");
+}
+
+.enemy {
+	width: 80%;
+	padding-bottom: 80%;
+	background-size: cover;
+	background-image: url("../img/flecha.png");
+	margin: 10%;
+}
+
+.inn {
+	width: 80%;
+	padding-bottom: 80%;
+	background-size: cover;
+	background-image: url("../img/castillo.png");
+	margin: 10%;
+}
+
+.inn-panel {
+	display: none;
+}
+
+.spin1 { 
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform:rotate(90deg);
+}
+
+.spin2 { 
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform:rotate(180deg);
+}
+
+.spin3 { 
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform:rotate(270deg);
+}
+
+.spin4 { 
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform:rotate(0deg);
+}
+
+/* funciones de animaciones y transiciones */
+@keyframes walkTo1 {
+    from { top:0%; left: 0%; }
+    to { top:20%; left: 20%; }
+}
+ 
+@-webkit-keyframes walkTo1 {
+    from { top:0%; left: 0%; }
+    to { top:20%; left: 20%; }
+}
+
+@keyframes walkTo2 {
+    from { top:0%; }
+    to { top:20%; }
+}
+ 
+@-webkit-keyframes walkTo2 {
+    from { top:0%; }
+    to { top:20%; }
+}
+
+@keyframes walkTo3 {
+    from { top:0%; right: 0%; }
+    to { top:20%; right: 20%; }
+}
+ 
+@-webkit-keyframes walkTo3 {
+    from { top:0%; right: 0%; }
+    to { top:20%; right: 20%; }
+}
+
+@keyframes walkTo4 {
+    from { left: 0%; }
+    to { left: 20%; }
+}
+ 
+@-webkit-keyframes walkTo4 {
+    from { left: 0%; }
+    to { left: 20%; }
+}
+
+@keyframes walkTo6 {
+    from { right: 0%; }
+    to { right: 20%; }
+}
+ 
+@-webkit-keyframes walkTo6 {
+    from { right: 0%; }
+    to { right: 20%; }
+}
+
+@keyframes walkTo7 {
+    from { bottom:0%; left: 0%; }
+    to { bottom:20%; left: 20%; }
+}
+ 
+@-webkit-keyframes walkTo7 {
+    from { bottom:0%; left: 0%; }
+    to { bottom:20%; left: 20%; }
+}
+
+@keyframes walkTo8 {
+    from { bottom:0%; }
+    to { bottom:20%; }
+}
+ 
+@-webkit-keyframes walkTo8 {
+    from { bottom:0%; }
+    to { bottom:20%; }
+}
+
+@keyframes walkTo9 {
+    from { bottom:0%; right: 0%; }
+    to { bottom:20%; right: 20%; }
+}
+ 
+@-webkit-keyframes walkTo9 {
+    from { bottom:0%; right: 0%; }
+    to { bottom:20%; right: 20%; }
+}
+
+/* Este elemento es quien ejecutara esa funcion */ 
+.walkTo1 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo1 1000ms forwards;
+    -webkit-animation: walkTo1 1000ms forwards;
+}
+
+.walkTo2 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo2 1000ms forwards;
+    -webkit-animation: walkTo2 1000ms forwards;
+}
+
+.walkTo3 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo3 1000ms forwards;
+    -webkit-animation: walkTo3 1000ms forwards;
+}
+
+.walkTo4 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo4 1000ms forwards;
+    -webkit-animation: walkTo4 1000ms forwards;
+}
+
+.walkTo6 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo6 1000ms forwards;
+    -webkit-animation: walkTo6 1000ms forwards;
+}
+
+.walkTo7 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo7 1000ms forwards;
+    -webkit-animation: walkTo7 1000ms forwards;
+}
+
+.walkTo8 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo8 1000ms forwards;
+    -webkit-animation: walkTo8 1000ms forwards;
+}
+
+.walkTo9 {
+	/* con el forwards se queda con el final state */
+    animation: walkTo9 1000ms forwards;
+    -webkit-animation: walkTo9 1000ms forwards;
+}
+
+@-moz-keyframes spinLeft { 100% { -moz-transform: rotate(90deg); } }
+@-webkit-keyframes spinLeft { 100% { -webkit-transform: rotate(90deg); } }
+@keyframes spinLeft { 100% { -webkit-transform: rotate(90deg); transform:rotate(90deg); } }
+
+@-moz-keyframes spinRight { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spinRight { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spinRight { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+.spinLeft {
+    -webkit-animation:spinLeft 1s linear forwards;
+    -moz-animation:spinLeft 1s linear forwards;
+    animation:spinLeft 1s linear forwards;
+}
+
+.spinRight {
+    -webkit-animation:spinRight 4s linear infinite;
+    -moz-animation:spinRight 4s linear infinite;
+    animation:spinRight 4s linear infinite;
+}

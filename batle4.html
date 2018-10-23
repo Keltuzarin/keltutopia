@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/batle4.css">
+		<link rel="stylesheet" type="text/css" href="css/navigation.css">
+		<title>RPG World</title>
+	</head>
+	<body>
+		<div class="app">
+			<!-- menu de navegacion -->
+			<div class="navigation"></div>
+			<!-- board del Juego -->
+			<div class="batle-panel">
+				<!--
+				<div class="enemy-list">
+					<div class="enemy-detail">
+						<div class="container">
+							<div class="name">Enemigo de elite</div>
+							<div class="pick"><span class="level">17</span></div>
+							<div class="info">
+								<div class="enemy-life">
+									<div class="life"></div>
+									<div class="counter">48/100</div>
+								</div>
+								<div class="enemy-mana">
+									<div class="mana"></div>
+									<div class="counter">12/48</div>
+								</div>
+							</div>
+							<div class="skills">
+								<div class="skill skill-1" onclick="javascript:setCooldown('.skill-1', 1000);" data-is-block="false">
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-2" onclick="javascript:setCooldown('.skill-2', 1000);" data-is-block="false">
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-3" onclick="javascript:setCooldown('.skill-3', 1000);" data-is-block="false">
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-4" onclick="javascript:setCooldown('.skill-4', 1000);" data-is-block="false">
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+				<div class="enemy-list-minified">
+					<!-- Para cada enemigo copiar y pegar este bloque -->
+					<div class="enemy-detail">
+						<div class="container">
+							<div class="pick"><span class="level">17</span></div>
+							<div class="info">
+								<div class="enemy-life">
+									<div class="life"></div>
+									<div class="counter">100%</div>
+								</div>
+								<div class="enemy-mana">
+									<div class="mana"></div>
+									<div class="counter">100%</div>
+								</div>
+							</div>
+							<div class="skills">
+								<div class="skill skill-1" onclick="javascript:setCooldown('.skill-1', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-2" onclick="javascript:setCooldown('.skill-2', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-3" onclick="javascript:setCooldown('.skill-3', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-4" onclick="javascript:setCooldown('.skill-4', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="enemy-detail">
+						<div class="container">
+							<div class="pick"><span class="level">17</span></div>
+							<div class="info">
+								<div class="enemy-life">
+									<div class="life"></div>
+									<div class="counter">100%</div>
+								</div>
+								<div class="enemy-mana">
+									<div class="mana"></div>
+									<div class="counter">100%</div>
+								</div>
+							</div>
+							<div class="skills">
+								<div class="skill skill-1" onclick="javascript:setCooldown('.skill-1', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-2" onclick="javascript:setCooldown('.skill-2', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-3" onclick="javascript:setCooldown('.skill-3', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-4" onclick="javascript:setCooldown('.skill-4', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="enemy-detail">
+						<div class="container">
+							<div class="pick"><span class="level">17</span></div>
+							<div class="info">
+								<div class="enemy-life">
+									<div class="life"></div>
+									<div class="counter">100%</div>
+								</div>
+								<div class="enemy-mana">
+									<div class="mana"></div>
+									<div class="counter">100%</div>
+								</div>
+							</div>
+							<div class="skills">
+								<div class="skill skill-1" onclick="javascript:setCooldown('.skill-1', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-2" onclick="javascript:setCooldown('.skill-2', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-3" onclick="javascript:setCooldown('.skill-3', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-4" onclick="javascript:setCooldown('.skill-4', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="enemy-detail">
+						<div class="container">
+							<div class="pick"><span class="level">17</span></div>
+							<div class="info">
+								<div class="enemy-life">
+									<div class="life"></div>
+									<div class="counter">100%</div>
+								</div>
+								<div class="enemy-mana">
+									<div class="mana"></div>
+									<div class="counter">100%</div>
+								</div>
+							</div>
+							<div class="skills">
+								<div class="skill skill-1" onclick="javascript:setCooldown('.skill-1', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-2" onclick="javascript:setCooldown('.skill-2', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-3" onclick="javascript:setCooldown('.skill-3', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="skill skill-4" onclick="javascript:setCooldown('.skill-4', 1000);" data-is-block="false">
+									<!-- misma estructura para todos los elementos con cooldown -->
+									<div class="cooldown-box">
+										<div class="cooldown-decoration">
+										</div>
+										<div class="cooldown">
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-left">
+												</div>
+											</div>
+											<div class="cooldown-half">
+												<div class="cooldown-half-rotator cooldown-half-rotator-right">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="combat-panel">
+					<div class="status-section">
+						<div class="hero-status">
+							<div class="name-bar">Hero Name</div>
+							<div class="life-bar">
+								<div class="life"></div>
+								<div class="counter">95/100</div>
+							</div>
+							<div class="mana-bar">
+								<div class="mana"></div>
+								<div class="counter">12/48</div>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<div>
+							<div class="combat-action auto-attack-action" onclick="javascript:setCooldown('.auto-attack-action', 1000);" data-is-block="false">
+								<!-- misma estructura para todos los elementos con cooldown -->
+								<div class="cooldown-box">
+									<div class="cooldown-decoration">
+									</div>
+									<div class="cooldown">
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-left">
+											</div>
+										</div>
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-right">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="combat-action first-combat-action" onclick="javascript:setCooldown('.first-combat-action', 1000);" data-is-block="false">
+								<!-- misma estructura para todos los elementos con cooldown -->
+								<div class="cooldown-box">
+									<div class="cooldown-decoration">
+									</div>
+									<div class="cooldown">
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-left">
+											</div>
+										</div>
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-right">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="combat-action second-combat-action" onclick="javascript:setCooldown('.second-combat-action', 1000);" data-is-block="false">
+								<!-- misma estructura para todos los elementos con cooldown -->
+								<div class="cooldown-box">
+									<div class="cooldown-decoration">
+										<span class="cooldown-counter"></span>
+									</div>
+									<div class="cooldown">
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-left">
+											</div>
+										</div>
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-right">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="combat-action third-combat-action" onclick="javascript:setCooldown('.third-combat-action', 1000);" data-is-block="false">
+								<!-- misma estructura para todos los elementos con cooldown -->
+								<div class="cooldown-box">
+									<div class="cooldown-decoration">
+										<span class="cooldown-counter"></span>
+									</div>
+									<div class="cooldown">
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-left">
+											</div>
+										</div>
+										<div class="cooldown-half">
+											<div class="cooldown-half-rotator cooldown-half-rotator-right">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MUY IMPORTANTE, INCLUIR ESTE FILE CUANDO LO EXPORTEMOS A MOVIL -->
+		<!--
+		<script type="text/javascript" src="cordova.js"></script>
+		-->
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="js/navigation.js"></script>
+		<script type="text/javascript" src="js/batle4.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

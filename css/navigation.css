@@ -1,0 +1,21 @@
+/* estilos propios*/
+.navigation {
+	width: 100%;
+	display: inline-block;
+	z-index:10000;
+	text-align: center;
+}
+
+.navigation .element {
+	border: 3px solid #b3b3b3;
+	margin: 1px;
+	padding: 3px;
+	float: left;
+}
+
+.navigation .element .pick {
+	background-color: rgb(64,64,64);
+	border-radius: 6px;
+	height: 100%;
+	width: 100%;
+}

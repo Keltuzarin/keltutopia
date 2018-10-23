@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/map.css">
+		<link rel="stylesheet" type="text/css" href="css/navigation.css">
+		<title>RPG World</title>
+	</head>
+	<body>
+		<div class="app">
+			<!-- menu de navegacion -->
+			<div class="navigation"></div>
+			<!-- board del Juego -->
+			<div class="board-container">
+				<div class="board">
+					<div id="square-1"  class="square" data-x="-2" data-y="2"></div>
+					<div id="square-2"  class="square" data-x="-1" data-y="2"></div>
+					<div id="square-3"  class="square" data-x="0" data-y="2"></div>
+					<div id="square-4"  class="square" data-x="1" data-y="2"></div>
+					<div id="square-5"  class="square" data-x="2" data-y="2"></div>
+					<div id="square-6"  class="square" data-x="-2" data-y="1"></div>
+					<div id="square-7"  class="square" data-x="-1" data-y="1"></div>
+					<div id="square-8"  class="square" data-x="0" data-y="1"></div>
+					<div id="square-9"  class="square" data-x="1" data-y="1"></div>
+					<div id="square-10" class="square" data-x="2" data-y="1"></div>
+					<div id="square-11" class="square" data-x="-2" data-y="0"></div>
+					<div id="square-12" class="square" data-x="-1" data-y="0"></div>
+					<div id="square-13" class="square" data-x="0" data-y="0"></div>
+					<div id="square-14" class="square" data-x="1" data-y="0"></div>
+					<div id="square-15" class="square" data-x="2" data-y="0"></div>
+					<div id="square-16" class="square" data-x="-2" data-y="-1"></div>
+					<div id="square-17" class="square" data-x="-1" data-y="-1"></div>
+					<div id="square-18" class="square" data-x="0" data-y="-1"></div>
+					<div id="square-19" class="square" data-x="1" data-y="-1"></div>
+					<div id="square-20" class="square" data-x="2" data-y="-1"></div>
+					<div id="square-21" class="square" data-x="-2" data-y="-2"></div>
+					<div id="square-22" class="square" data-x="-1" data-y="-2"></div>
+					<div id="square-23" class="square" data-x="0" data-y="-2"></div>
+					<div id="square-24" class="square" data-x="1" data-y="-2"></div>
+					<div id="square-25" class="square" data-x="2" data-y="-2"></div>
+				</div>
+				<div class="onBoard">
+					<div class="top-onBoard">Your inn is on: <span id="innCoords"></span></div>
+					<div class="left-onBoard"></div>
+					<div class="right-onBoard"></div>
+					<div class="square-container">
+						<div id="onSquare-1" class="onSquare" data-x="-1" data-y="1"></div>
+						<div id="onSquare-2" class="onSquare" data-x="0" data-y="1"></div>
+						<div id="onSquare-3" class="onSquare" data-x="1" data-y="1"></div>
+						<div id="onSquare-4" class="onSquare" data-x="-1" data-y="0"></div>
+						<div id="onSquare-5" class="onSquare" data-x="0" data-y="0">
+							<div class="hero" data-hero-info="{}"></div>
+						</div>
+						<div id="onSquare-6" class="onSquare" data-x="1" data-y="0"></div>
+						<div id="onSquare-7" class="onSquare" data-x="-1" data-y="-1"></div>
+						<div id="onSquare-8" class="onSquare" data-x="0" data-y="-1"></div>
+						<div id="onSquare-9" class="onSquare" data-x="1" data-y="-1"></div>
+					</div>
+					<div class="bottom-onBoard">
+						<div class="inn-panel">
+							<div>Estas a salvo en la ciudad</div>
+							<div class="new-main-inn"><button onclick="javascript:makeMainInn();">hacer ciudad principal</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MUY IMPORTANTE, INCLUIR ESTE FILE CUANDO LO EXPORTEMOS A MOVIL -->
+		<!--
+		<script type="text/javascript" src="cordova.js"></script>
+		-->
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="js/navigation.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

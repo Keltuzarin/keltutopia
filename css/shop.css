@@ -1,0 +1,140 @@
+/* estilos propios*/
+.shop {
+	margin: 1px;
+}
+
+.items {
+	border: 3px solid #b3b3b3;
+	margin: 1px;
+	padding: 1px;
+	border-radius: 6px;
+	display: inline-block;
+}
+
+.item {
+	border: 3px solid #b3b3b3;
+	margin: 1px;
+	padding: 3px;
+	border-radius: 6px;
+	float: left;
+}
+
+.item .pick {
+	background-color: rgb(64,64,64);
+	border-radius: 6px;
+	height: 100%;
+	width: 100%;
+}
+
+/* INICIO PUEDE QUE ESTOS ESTILOS TENGAN QUE IR AL INDEX.CSS*/
+.item-detail {
+	border: 3px solid #696B75;
+	margin: 1px;
+	padding: 3px;
+	border-radius: 6px;
+	background-color: #03081C;
+	overflow: auto;
+}
+
+.item-detail .item-type{
+	color: #F0C603;
+	float: right;
+}
+
+.item-detail .item-level{
+	color: #F0C603;
+}
+
+.item-detail .negative{
+	color: red;
+}
+
+/* FIN PUEDE QUE ESTOS ESTILOS TENGAN QUE IR AL INDEX.CSS*/
+
+.sell-panel{
+	border: 3px solid #b3b3b3;
+	margin: 1px;
+	padding: 1px;
+	border-radius: 6px;
+	position: relative;
+}
+
+.sell-panel > div{
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	top: 3px;
+}
+
+.sell-panel > div > div {
+	float: left;
+}
+
+.sell-label {
+	padding: 0px 2px;
+	padding-right: 10px;
+}
+
+.next {
+	background-image: url(../img/next.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0px 5px;
+}
+
+.next:active {
+	background-image: url(../img/next-active.png);
+}
+
+.prev {
+	background-image: url(../img/prev.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0px 5px;
+}
+
+.prev:active {
+	background-image: url(../img/prev-active.png);
+}
+
+.sell-panel > div > div.sell-button {
+	float: right;
+	border: 1px solid cadetblue;
+	padding: 1px 4px;
+	background-color: saddlebrown;
+	margin-right: 3px;
+}
+
+.sell-panel > div > div.sell-button:active {
+	background-color: #d27b3d;
+}
+
+/*
+.item .info {
+	width: 60%;
+	float: left;
+}
+
+.item .info .name {
+	padding: 0px 6px;
+}
+
+.item .info .value {
+	text-align: center;
+}
+
+.item .button {
+	width: 20%;
+	float: left;
+	border-radius: 6px;
+	background-color: grey;
+	padding: 6px 0px;
+	text-align: center;
+}
+
+.item .button:active {
+	background-color: DarkGrey;
+}
+*/

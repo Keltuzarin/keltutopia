@@ -1,0 +1,120 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    height:100%;
+    width:100%;
+	background: black;
+	color: white;
+	overflow: hidden;
+	margin: 0;
+	font-family: Arial;
+	line-height: 0;
+}
+
+ul.unstyled {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* estilos propios */
+.board-container{
+	position: relative;
+	overflow: hidden;
+}
+
+/* monedas */
+.money-gold{
+    background-image: url(../img/coin-gold.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+
+.money-silver{
+    background-image: url(../img/coin-silver.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+
+.money-copper{
+    background-image: url(../img/coin-copper.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+
+/* inicio ventana de detalle item */
+.detail-panel{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+
+.detail-panel .detail-background{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background: black;
+	opacity: 0.75;
+}
+
+.detail-panel .detail-log {
+	border: 3px solid #696B75;
+	margin: 3px;
+	padding: 3px;
+	border-radius: 6px;
+	background-color: #03081C;
+	width: 75%;
+	margin: 10%;
+	position: fixed;
+}
+
+.detail-panel .item-name{
+	color: white;
+}
+
+.detail-panel .item-level{
+	color: #F0C603;
+}
+
+.detail-panel .item-type{
+	color: #F0C603;
+	float: right;
+}
+
+.detail-panel .item-stat{
+	color: #FFFFFF;
+}
+
+.detail-panel .item-stat-value{
+	text-align: right;
+	padding-right: 10px;
+}
+
+.detail-panel .item-required-level{
+	
+}
+
+.detail-panel .item-price{
+	
+}
+
+.detail-panel .item-price-panel{
+	text-align: center;
+}
+
+.detail-panel .positive{
+	color: green;
+}
+
+.detail-panel .negative{
+	color: red;
+}
+/* fin ventana de detalle item */
